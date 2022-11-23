@@ -20,11 +20,29 @@
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
-    <depends>com.intellij.modules.clion.ide</depends>
-
+    <depends>com.intellij.modules.clion</depends>
+    <depends>com.intellij.cidr.base</depends>
+    <depends>com.intellij.cidr.debugger</depends>
+    <depends>com.intellij.modules.remoteServers</depends>
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <configurationType implementation="com.espressif.idf.configurations.debugger.ESPDebugConfigurationType" id="com.espressif.idf.openocd.conf.type"/>
+        <projectConfigurable order="last" id="com.espressif.idf.config"
+                             instance="com.espressif.idf.configurations.debugger.openocd.OpenOcdSettings"
+                             displayName="OpenOCD Support" groupId="build"/>
     </extensions>
+
+    <project-components>
+        <component>
+            <loadForDefaultProject>true</loadForDefaultProject>
+            <implementation-class>com.espressif.idf.configurations.debugger.openocd.OpenOcdSettingsState</implementation-class>
+        </component>
+        <component>
+            <implementation-class>com.espressif.idf.configurations.debugger.openocd.OpenOcdSettings</implementation-class>
+        </component>
+        <component>
+            <implementation-class>com.espressif.idf.configurations.debugger.openocd.OpenOcdComponent</implementation-class>
+        </component>
+    </project-components>
 </idea-plugin>
