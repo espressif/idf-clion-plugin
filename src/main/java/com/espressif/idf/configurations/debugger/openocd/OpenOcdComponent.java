@@ -97,9 +97,9 @@ public class OpenOcdComponent
 		{
 			commandLine.addParameters("-c", "telnet_port " + config.getTelnetPort());
 		}
-		if (config.getFlashVoltage() != DEFAULT_FLASH_VOLTAGE)
+		if (!config.getFlashVoltage().equals(DEFAULT_FLASH_VOLTAGE))
 		{
-			commandLine.addParameters("-c 'set ESP32_FLASH_VOLTAGE ".concat(config.getFlashVoltage()).concat("'"));
+			commandLine.addParameters("-c", "'set ESP32_FLASH_VOLTAGE ".concat(config.getFlashVoltage()).concat("'"));
 		}
 
 		commandLine.addParameters("-f", config.getBoardConfigFile());
