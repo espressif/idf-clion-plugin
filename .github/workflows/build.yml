@@ -1,0 +1,18 @@
+name: Gradle CI for IDF Clion Plugin
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build-gradle-clion-plugin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project Sources
+        uses: actions/checkout@v2
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+      - name: Run build with Gradle Wrapper
+        run: ./gradlew clean build jar buildPlugin
