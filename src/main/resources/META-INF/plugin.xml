@@ -5,7 +5,7 @@
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>IDF Clion</name>
+    <name>ESP-IDF Development</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="ide.support@espressif.com" url="https://www.espressif.com">Espressif</vendor>
@@ -22,7 +22,6 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.clion</depends>
     <depends>com.intellij.cidr.base</depends>
-    <depends>com.intellij.cidr.debugger</depends>
     <depends>com.intellij.modules.remoteServers</depends>
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
