@@ -21,7 +21,6 @@ intellij {
     plugins.add("com.intellij.java")
     version.set("2023.1")
     type.set("CL") // Target IDE Platform
-//    plugins.set(listOf(/* Plugin Dependencies */))
     plugins.set(listOf("com.intellij.clion", "com.intellij.cidr.base"))
 }
 
