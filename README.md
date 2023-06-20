@@ -10,19 +10,19 @@ Make sure not to unzip the internal Zip file in the archive.
 
 Start the CLion.
 
-* Click on Plugins from the side window
+* Click on Plugins from the side window 
 ![clion_setup_1.png](docs%2Freadme_images%2Finstall%2Fclion_setup_1.png)
 <br>
 <br>
-* Next click on the settings wheel on the top and select `Install Plugins from Disk...`
+* Next click on the settings wheel on the top and select `Install Plugins from Disk...` 
 ![clion_setup_2.png](docs%2Freadme_images%2Finstall%2Fclion_setup_2.png)
 <br>
 <br>
-* From the popup window select the zip you extracted and click Ok
+* From the popup window select the zip you extracted and click Ok 
 ![clion_setup_3.png](docs%2Freadme_images%2Finstall%2Fclion_setup_3.png)
 <br>
 <br>
-* After the installation you will be show the plugin installed, but you will have to restart the IDE. So click on the Restart IDE button.
+* After the installation you will be show the plugin installed, but you will have to restart the IDE. So click on the Restart IDE button 
 ![clion_setup_4.png](docs%2Freadme_images%2Fclion_setup_4.png)
 <br>
 <br>
