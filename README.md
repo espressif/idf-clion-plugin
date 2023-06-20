@@ -3,7 +3,7 @@ ESP-IDF CLion Plugin
 
 The source for the initial start of the plugin was taken from [this](https://github.com/daniel-sullivan/clion-embedded-esp32/) project.
 
-## Installing the Plugin
+## Configuration and Installation
 
 Please download the release zip file from releases section and unzip it.
 Make sure not to unzip the internal Zip file in the archive.
@@ -20,6 +20,7 @@ Start the CLion.
 ![clion_setup_3.png](docs%2Freadme_images%2Finstall%2Fclion_setup_3.png)
 
 * After the installation you will be show the plugin installed, but you will have to restart the IDE. So click on the Restart IDE button<br>
+
 ![clion_setup_4.png](docs%2Freadme_images%2Fclion_setup_4.png)
 
 <br>
