@@ -20,11 +20,7 @@ Start the CLion.
 ![clion_setup_3.png](docs%2Freadme_images%2Finstall%2Fclion_setup_3.png)
 
 * After the installation you will be show the plugin installed, but you will have to restart the IDE. So click on the Restart IDE button<br>
-
-![clion_setup_4.png](docs%2Freadme_images%2Fclion_setup_4.png)
-
-<br>
-<br>
+![clion_setup_4.png](docs%2Freadme_images%2Finstall%2Fclion_setup_4.png)
 
 At this stage you have installed the plugin but since the plugin is in the beta versions, there are some configurations that are required to be done manually for IDF.
 
