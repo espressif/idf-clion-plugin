@@ -28,8 +28,8 @@ At this stage you have installed the plugin but since the plugin is in the beta 
 
 * You need to download and install the IDF Tools. You can download and install them from the [IDF Page](https://github.com/espressif/esp-idf/releases). Once you have downloaded and installed the tools you can continue on the next step.
 * Now Load an example project from the idf folder. For this document we will be using hello_world example.
-* Once you have selected and opened the projec you will be given with the following project configuration wizard. Please remove all the existing toolchains from here.<br>
-![clion_plugin_setup.png](docs%2Freadme_images%2Fsetup%2Fclion_plugin_setup.png)
+* Once you have selected and opened the project you will be given with the following project configuration wizard. Please remove all the existing toolchains from here.<br>
+![clion_plugin_setup_1.png](docs%2Freadme_images%2Fsetup%2Fclion_plugin_setup_1.png)
 * After that click on `+` Add and select system from the dropdown<br>
 ![clion_plugin_setup_2.png](docs%2Freadme_images%2Fsetup%2Fclion_plugin_setup_2.png)
 * Next step please configure the Paths. The tools are usually installed under the `.espressif` directory in the user home folder.
