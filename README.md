@@ -1,5 +1,5 @@
 # ESP-IDF CLion Plugin
-ESP-IDF CLion Plugin
+IDF CLion Plugin for ESP-IDF CMake based projects (4.x and above)
 
 The source for the initial start of the plugin was taken from [this](https://github.com/daniel-sullivan/clion-embedded-esp32/) project.
 
