@@ -14,7 +14,7 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    ESPRESSIF IDF Plugin for development on CLion using IDF Framework.<br>
+    ESP-IDF Plugin for CLion IDE.<br>
     <em></em>
   ]]></description>
 

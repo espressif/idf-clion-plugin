@@ -1,18 +1,14 @@
 # ESP-IDF CLion Plugin
-IDF CLion Plugin for ESP-IDF CMake based projects (4.x and above)
+ESP-IDF CLion Plugin for ESP-IDF CMake based projects (4.x and above).
 
 The source for the initial start of the plugin was taken from [this](https://github.com/daniel-sullivan/clion-embedded-esp32/) project.
 
 # Table Of Contents
-<details open>
-  <summary>Get Started</summary>
 
 * [ Configuration and Installation ](#config_install) <br>
 * [ Building Flashing and Serial Monitor ](#build_flash_monitor)<br>
 * [ OpenOCD Debugging ](#openocdDebugging)<br>
 * [ Creating New Project ](#creatingNewProject)<br>
-
-</details>
 
 <a name="config_install"></a>
 ## Configuration and Installation
