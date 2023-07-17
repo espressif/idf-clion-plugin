@@ -1,0 +1,38 @@
+name: Gradle CI for IDF Clion Plugin
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build-gradle-clion-plugin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project Sources
+        uses: actions/checkout@v2
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'oracle'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+
+      - name: Wrapper permissions
+        run: chmod +x ./gradlew
+
+      - name: Run build with Gradle Wrapper
+        run: ./gradlew clean build jar buildPlugin
+
+      - name: Upload Built Plugin Archive
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: com.espressif.idf.plugin
+          path: build/distributions/idf-clion-plugin-*.zip
+
