@@ -6,9 +6,9 @@ The source for the initial start of the plugin was taken from [this](https://git
 # Table Of Contents
 
 * [ Configuration and Installation ](#config_install) <br>
+* [ Creating New Project ](#creatingNewProject)<br>
 * [ Building Flashing and Serial Monitor ](#build_flash_monitor)<br>
 * [ OpenOCD Debugging ](#openocdDebugging)<br>
-* [ Creating New Project ](#creatingNewProject)<br>
 
 <a name="config_install"></a>
 ## Configuration and Installation
@@ -56,38 +56,6 @@ Click on `...` and select `python.exe` from the `.espressif/python_env/VERSION_O
 <br><br><br>
 **These are the basic configurations that are required since the plugin is in beta version at the moment**
 
-<a name="build_flash_monitor"></a>
-## Building, Flashing, Serial Monitor
-### Building
-To build the project you can select app from the launch configuration and click build.
-### Flashing
-To flash the application you can select flash option from launch configuration and click `Run` button.
-To make sure that you are flashing on the correct port you can modify the env variables in flash configuration. 
-To do that click on the arrow next to flash configuration from dropdown and click Edit.
-
-![flash_edit.png](docs%2Freadme_images%2Fflash_edit.png) <br>
-From the next screen you can add an environment variable as shown below for the port.
-![flash_port.png](docs%2Freadme_images%2Fflash_port.png)
-### Serial Monitor
-The serial monitor for this version is still a work in progress. You cannot run it from the monitor option in 
-launch configurations at the moment. Although you can try to use the terminal in the CLion 
-to run `idf.py monitor command` but make sure that your CLion is configured to use the default `build` directory since
-the default build directory in the CLion is different.
-
-<a name="openocdDebugging"></a>
-## OpenOCD Debugging
-`ESP Debug Configuration` is the newly added feature to support debugging using the OpenOCD.
-Please follow the below steps to configure.
-
-* From the `Run` menu, click on `Edit Configurations` and click on `+` from the opened window and select `ESP Debug Configuration`.
-![clion_plugin_setup_8.png](docs%2Freadme_images%2Fsetup%2Fclion_plugin_setup_8.png)
-* Make sure to select the `Executable` and `Target` from the dropdown. Also `Select Board` according to your board.
-![clion_plugin_setup_9.png](docs%2Freadme_images%2Fsetup%2Fclion_plugin_setup_9.png)
-Once you have selected the board and configured other settings, click OK.
-* To start debugging, click the `Debug` button or press `Shift+F9` (the default shortcut for debugging on Windows). Make sure that the debug configuration you created is selected in the plugin. When your breakpoint is hit, you will see the debug view with all the available features in CLion. You can view threads, stacktraces, and access the GDB console.
-
-![clion_plugin_setup_10.png](docs%2Freadme_images%2Fsetup%2Fclion_plugin_setup_10.png)
-
 <a name="creatingNewProject"></a>
 ## Creating New Project
 
@@ -120,3 +88,36 @@ include_directories("src")
 * Now from the terminal you can use `idf.py` commands.
 * Set the target using the terminal in CLion `idf.py set-target esp32`
 * You can build and flash your project using the `idf.py` commands. If the configurations are correct, you will also see the launch configurations in the dropdown menu. These launch configurations can be used to build, flash, and debug your project. For more information, see  [ Building Flashing and Serial Monitor ](#build_flash_monitor) section.
+* 
+<a name="build_flash_monitor"></a>
+## Building, Flashing, Serial Monitor
+### Building
+To build the project you can select app from the launch configuration and click build.
+### Flashing
+To flash the application you can select flash option from launch configuration and click `Run` button.
+To make sure that you are flashing on the correct port you can modify the env variables in flash configuration. 
+To do that click on the arrow next to flash configuration from dropdown and click Edit.
+
+![flash_edit.png](docs%2Freadme_images%2Fflash_edit.png) <br>
+From the next screen you can add an environment variable as shown below for the port.
+![flash_port.png](docs%2Freadme_images%2Fflash_port.png)
+### Serial Monitor
+The serial monitor for this version is still a work in progress. You cannot run it from the monitor option in 
+launch configurations at the moment. Although you can try to use the terminal in the CLion 
+to run `idf.py monitor command` but make sure that your CLion is configured to use the default `build` directory since
+the default build directory in the CLion is different.
+
+<a name="openocdDebugging"></a>
+## OpenOCD Debugging
+`ESP Debug Configuration` is the newly added feature to support debugging using the OpenOCD.
+Please follow the below steps to configure.
+
+* From the `Run` menu, click on `Edit Configurations` and click on `+` from the opened window and select `ESP Debug Configuration`.
+![clion_plugin_setup_8.png](docs%2Freadme_images%2Fsetup%2Fclion_plugin_setup_8.png)
+* Make sure to select the `Executable` and `Target` from the dropdown. Also `Select Board` according to your board.
+![clion_plugin_setup_9.png](docs%2Freadme_images%2Fsetup%2Fclion_plugin_setup_9.png)
+Once you have selected the board and configured other settings, click OK.
+* To start debugging, click the `Debug` button or press `Shift+F9` (the default shortcut for debugging on Windows). Make sure that the debug configuration you created is selected in the plugin. When your breakpoint is hit, you will see the debug view with all the available features in CLion. You can view threads, stacktraces, and access the GDB console.
+
+![clion_plugin_setup_10.png](docs%2Freadme_images%2Fsetup%2Fclion_plugin_setup_10.png)
+
