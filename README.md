@@ -13,8 +13,7 @@ The source for the initial start of the plugin was taken from [this](https://git
 <a name="config_install"></a>
 ## Configuration and Installation
 
-Please download the release zip file from releases section and unzip it.
-Make sure not to unzip the internal Zip file in the archive.
+To install the plugin, download the release zip file from the releases section. Unzip the file, but **do not unzip the internal zip file**. The product files are located in the root of the unzipped folder.
 
 Start the CLion.
 
@@ -92,10 +91,9 @@ Once you have selected the board and configured other settings, click OK.
 <a name="creatingNewProject"></a>
 ## Creating New Project
 
-Open CLion and Click on New Project
-
-* After selecting a name for the project click Create.
-* Once you are into the project please repeat the CMake configuration steps from the [ Configuration and Installation ](#config_install) section.
+* Open CLion and Click on `File > New > Project`
+* Provide a name and click on `Create`
+* Once the project is created, follow the steps required for CMake configuration from the [Configuration and Installation ](#config_install) section.
 * Create a directory called `main` in the project root and add a file `main.c/main.cpp` there. Also create a `CMakeList.txt` in this directory
 ```cmake
 set(SOURCES "main.c")
